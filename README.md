@@ -1,23 +1,21 @@
-# Credit Default Predictor - Local MLOps Project
+📚 Credit Default Predictor - Local MLOps Project
 
-Welcome to the **Credit Default MLOps Lab**!
+Welcome to the Credit Default MLOps Lab!
 This project demonstrates a full local MLOps pipeline using MLflow and Streamlit.
 
----
+⸻
 
-## Project Objectives
+Project Objectives
+	•	Install MLflow and set up a local tracking server
+	•	Train two ML models (April and May datasets)
+	•	Track model experiments with MLflow
+	•	Serve models with MLflow Models Server
+	•	Test predictions with a Streamlit UI
 
-- Install MLflow and set up a local tracking server
-- Train two ML models (April and May datasets)
-- Track model experiments with MLflow
-- Serve models with MLflow Models Server
-- Test predictions with a Streamlit UI
+⸻
 
----
+🏗️ Project Structure
 
-## Project Structure
-
-```
 api/
   data/
     raw/
@@ -30,59 +28,78 @@ ui/
 Makefile
 requirements.txt
 README.md
-```
 
----
 
-## Quick Setup
 
-1. Clone the repository:
+⸻
 
-```bash
-git clone https://github.com/iportilla/mlops-credit-default.git
-cd mlops-credit-default
-```
+Quick Setup
+	1.	Clone the repository:
 
-2. Install Python 3.11 (recommend using pyenv)  See [prereq.md](prereq.md) for more details.pyenv install 3.11.4
-pyenv global 3.11.4
-):
+git clone https://github.com/YOUR_USERNAME/credit-default-predictor.git
+cd credit-default-predictor
 
-```bash
+	2.	Install Python 3.11 (recommend using pyenv):
+
 pyenv install 3.11.4
 pyenv global 3.11.4
-```
 
-3. Install required Python packages:
+	3.	Install required Python packages:
 
-```bash
 pip install -r requirements.txt
-```
 
-4. Create local mlruns folder manually:
+	4.	Create local mlruns folder manually:
 
-```bash
 mkdir -p ~/mlruns
-```
 
-✅ This is required for MLflow to save experiments locally.
+	5.	Start MLflow Tracking Server:
 
----
+mlflow server \
+  --backend-store-uri sqlite:///mlflow.db \
+  --default-artifact-root ~/mlruns \
+  --host 0.0.0.0 \
+  --port 5000
 
-## Commands Cheat Sheet
+✅ This initializes mlflow.db and creates the required tables (experiments, runs, etc.).
+	6.	Verify Checks:
 
-| Task | Command |
-|:---|:---|
-| Start MLflow Tracking Server | `mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ~/mlruns --host 0.0.0.0 --port 5000` |
-| Train April Model | `python training/train.py api/data/raw/april_credit_data.csv` |
-| Train May Model | `python training/train.py api/data/raw/may_credit_data.csv` |
-| Serve Model Manually | `mlflow models serve -m mlruns/1/<run_id>/artifacts/credit_defaults_model_ -p 5001` |
-| Launch Streamlit App | `streamlit run ui/streamlit_app.py` |
+	•	Confirm ~/mlruns exists:
 
----
+ls ~/mlruns
 
-## Architecture Overview
+	•	Confirm mlflow.db exists in your project directory:
 
-```
+ls mlflow.db
+
+✅ If these exist, you’re ready to train models.
+
+⸻
+
+Commands Cheat Sheet
+
+Task	Command
+Start MLflow Tracking Server	mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ~/mlruns --host 0.0.0.0 --port 5000
+Train April Model	python training/train.py api/data/raw/april_credit_data.csv
+Train May Model	python training/train.py api/data/raw/may_credit_data.csv
+Serve Model Manually	mlflow models serve -m /home/ubuntu/mlruns/1/<run_id>/artifacts/credit_defaults_model_ -p 5001
+Launch Streamlit App	streamlit run ui/streamlit_app.py
+
+When serving, make sure you point to the credit_defaults_model_ folder which contains:
+	•	MLmodel
+	•	model.pkl
+	•	requirements.txt
+	•	conda.yaml
+
+Example after training:
+
+/home/ubuntu/mlruns/1/2a4829d050cb479a9d528d48033d18d0/artifacts/credit_defaults_model_
+
+
+
+⸻
+
+Architecture Overview
+
 Local Machine
    ↓
 MLflow Tracking Server (localhost:5000)
@@ -90,23 +107,23 @@ MLflow Tracking Server (localhost:5000)
 MLflow Model Server (localhost:5001)
    ↓
 Streamlit Frontend (localhost:8501)
-```
 
----
 
-## Learning Outcomes
 
-- Model training and logging
-- Model versioning and experiment tracking
-- Serving models automatically
-- UI connection for predictions
+⸻
 
----
+Learning Outcomes
+	•	Model training and logging
+	•	Model versioning and experiment tracking
+	•	Serving models automatically
+	•	UI connection for predictions
 
-## License
+⸻
+
+License
 
 This project is licensed under the MIT License.
 
----
+⸻
 
-# ✨ Happy Predicting with MLOps! 
+✨ Happy Predicting MLOps!
