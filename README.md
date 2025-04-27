@@ -40,7 +40,7 @@ README.md
 1. Clone the repository:
 ```bash
 git clone https://github.com/iportilla/mlops-credit-default.git
-cd mlops-credit-defaultr
+cd mlops-credit-default
 ```
 
 2. Install Python 3.11 (recommend using pyenv):
