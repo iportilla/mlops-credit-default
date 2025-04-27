@@ -23,8 +23,8 @@ data = pd.read_csv(dataset_path)
 if 'ID' in data.columns:
     data = data.drop('ID', axis=1)
 
-X = data.drop('default payment next month', axis=1)
-y = data['default payment next month']
+X = data.drop('default.payment.next.month', axis=1)
+y = data['default.payment.next.month']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
