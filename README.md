@@ -1,11 +1,11 @@
-# 📚 Credit Default Predictor - Local MLOps Project
+# Credit Default Predictor - Local MLOps Project
 
 Welcome to the **Credit Default MLOps Lab**!
 This project demonstrates a full local MLOps pipeline using MLflow and Streamlit.
 
 ---
 
-## 🚀 Project Objectives
+## Project Objectives
 
 - Install MLflow and set up a local tracking server
 - Train two ML models on April and May datasets
@@ -15,7 +15,7 @@ This project demonstrates a full local MLOps pipeline using MLflow and Streamlit
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 api/
@@ -35,12 +35,12 @@ README.md
 
 ---
 
-## 🛠️ Quick Setup
+## Quick Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-default-predictor.git
-cd credit-default-predictor
+git clone https://github.com/iportilla/mlops-credit-default.git
+cd mlops-credit-defaultr
 ```
 
 2. Install Python 3.11 (recommend using pyenv):
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🛠️ Commands Cheat Sheet
+## Commands Cheat Sheet
 
 | Task | Command |
 |:---|:---|
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🌎 Architecture Overview
+## Architecture Overview
 
 ```
 Local Machine
@@ -82,7 +82,7 @@ Streamlit Frontend (localhost:8501)
 
 ---
 
-## 🧠 Learning Outcomes
+## Learning Outcomes
 
 - Full ML model lifecycle management
 - Experiment tracking and comparison
@@ -91,10 +91,10 @@ Streamlit Frontend (localhost:8501)
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-# ✨ Happy Predicting! 🚀
+# ✨ Happy Predicting!
