@@ -5,7 +5,7 @@ This project demonstrates a full local MLOps pipeline using MLflow and Streamlit
 
 ---
 
-## 🚀 Project Objectives
+## Project Objectives
 - Install MLflow and set up a local tracking server
 - Train two ML models (April and May datasets)
 - Track model experiments with MLflow
@@ -14,7 +14,7 @@ This project demonstrates a full local MLOps pipeline using MLflow and Streamlit
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 api/
@@ -33,13 +33,13 @@ README.md
 
 ---
 
-## 🛠️ Quick Setup
+## Quick Setup
 
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-default-predictor.git
-cd credit-default-predictor
+git clone https://github.com/iportilla/mlops-credit-default.git
+cd mlops-credit-default
 ```
 
 ### 2. Install Python 3.11 (recommend using pyenv):
@@ -90,7 +90,7 @@ ls mlflow.db
 
 ---
 
-## 🛠️ Commands Cheat Sheet
+## Commands Cheat Sheet
 
 | Task | Command |
 |:---|:---|
@@ -114,7 +114,7 @@ Example path after training:
 
 ---
 
-## 🌎 Architecture Overview
+## Architecture Overview
 
 ```
 Local Machine
@@ -128,7 +128,7 @@ Streamlit Frontend (localhost:8501)
 
 ---
 
-## 🧐 Learning Outcomes
+## Learning Outcomes
 - Model training and logging
 - Model versioning and experiment tracking
 - Serving models automatically
@@ -136,10 +136,10 @@ Streamlit Frontend (localhost:8501)
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-# ✨ Happy Predicting MLOps! 🚀
+# ✨ Happy Predicting with MLOps! 🚀
