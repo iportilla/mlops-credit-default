@@ -1,4 +1,4 @@
-# 📚 Credit Default Predictor - Local MLOps Project
+# Credit Default Predictor - Local MLOps Project
 
 Welcome to the **Credit Default MLOps Lab**!  
 This project demonstrates a full local MLOps pipeline using MLflow and Streamlit.
@@ -142,4 +142,4 @@ This project is licensed under the MIT License.
 
 ---
 
-# ✨ Happy Predicting with MLOps! 🚀
+# ✨ Happy Predicting with MLOps!
