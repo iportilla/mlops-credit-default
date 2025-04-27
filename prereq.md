@@ -1,11 +1,11 @@
-# 📚 Prerequisites for Credit Default Predictor MLOps Lab
+# Prerequisites for Credit Default Predictor MLOps Lab
 
 Welcome to the setup guide for the Credit Default MLOps Lab!
 Follow these steps to prepare your environment before starting the exercises.
 
 ---
 
-## 🛠️ 1. Install System Packages
+## 1. Install System Packages
 
 ```bash
 sudo apt update
@@ -16,7 +16,7 @@ libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git
 
 ---
 
-## 🛠️ 2. Install pyenv (Python Version Manager)
+## 2. Install pyenv (Python Version Manager)
 
 ```bash
 curl https://pyenv.run | bash
@@ -24,7 +24,7 @@ curl https://pyenv.run | bash
 
 ---
 
-## 🛠️ 3. Configure Your Shell
+## 3. Configure Your Shell
 
 For bash:
 
@@ -48,7 +48,7 @@ source ~/.zshrc
 
 ---
 
-## 🛠️ 4. Verify pyenv Installation
+## 4. Verify pyenv Installation
 
 ```bash
 pyenv --version
@@ -56,7 +56,7 @@ pyenv --version
 
 ---
 
-## 🛠️ 5. Install Python 3.11.4
+## 5. Install Python 3.11.4
 
 ```bash
 pyenv install 3.11.4
@@ -65,7 +65,7 @@ pyenv global 3.11.4
 
 ---
 
-## 📦 6. Install Project Requirements
+## 6. Install Project Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -73,4 +73,4 @@ pip install -r requirements.txt
 
 ---
 
-# 🎯 Ready to start the lab!
+# Ready to start the lab!
