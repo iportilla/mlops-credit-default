@@ -43,7 +43,9 @@ git clone https://github.com/iportilla/mlops-credit-default.git
 cd mlops-credit-default
 ```
 
-2. Install Python 3.11 (recommend using pyenv):
+2. Install Python 3.11 (recommend using pyenv)  See [prereq.md](prereq.md) for more details.pyenv install 3.11.4
+pyenv global 3.11.4
+):
 
 ```bash
 pyenv install 3.11.4
