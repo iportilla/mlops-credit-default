@@ -106,6 +106,8 @@ ls mlflow.db
 - `requirements.txt`
 - `conda.yaml`
 
+See [mlops-readme.md](mlops-readme.md) for more details.
+
 Example path after training:
 
 ```
