@@ -3,6 +3,9 @@
 Welcome to the **Credit Default MLOps Lab**!  
 This project demonstrates a full local MLOps pipeline using MLflow and Streamlit.
 
+![image](https://github.com/user-attachments/assets/374eaa45-0014-428e-82a9-1a73c6a99577)
+
+
 ---
 
 ## Project Objectives
